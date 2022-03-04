@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
 .navbar-brand {
-    letter-spacing: 3px;
+    letter-spacing: 3.5px;
     color: #000000;
+    font-family: 'Bebas Neue', cursive;
   }
   
   .navbar-brand:hover {
@@ -20,3 +25,12 @@
   .navbar-scrolled {
     background-color: #ffede7;
   }
+
+.page-footer {
+
+    background-color: #ffcc00;
+}
+
+.footer {
+    background-color: #e7be18;
+}
