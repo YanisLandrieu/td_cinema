@@ -33,9 +33,7 @@
 
             <!-- Grid column -->
             <div class="col-md-3 mb-md-0 mb-3"><br>
-
                 <!-- Links -->
-
                 <br>
                 <ul class="list-unstyled">
                     <li>
@@ -61,13 +59,7 @@
         <!-- Grid row -->
 
     </div>
-    <!-- Footer Links -->
-
-    <!-- Copyright -->
-    <div class="footer text-center py-3 bg-black">© 2022 Allociné
-    </div>
-    <!-- Copyright -->
-
+    <div class="footer text-center py-3 bg-black">© 2022 Allociné</div>
 </footer>
 <!-- Footer -->
 
