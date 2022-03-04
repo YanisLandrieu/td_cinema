@@ -1,3 +1,6 @@
+<?php 
+    include_once('../functions.php');
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -13,49 +16,50 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+<header>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0" style="background-color: #fecc00;">
+    <div class="container">
+        <a class="navbar-brand" href="#">Allociné</a>
+        <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="d-flex justify-content-start align-items-center">
+            <i class="fas fa-bars"></i>
+        </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+            <a class="nav-link px-3" href="#!">Films du Moment</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link px-3" href="#!">Top Films</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link px-3" href="#!">Contact</a>
+            </li>
+        </ul>
 
-<body>
-<!-- Header -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0" style="background-color: #fecc00;">
-  <div class="container">
-    <a class="navbar-brand" href="#">Allociné</a>
-    <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-      aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="d-flex justify-content-start align-items-center">
-        <i class="fas fa-bars"></i>
-      </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarExample01">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link px-3" href="#!">Films du Moment</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" href="#!">Top Films</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" href="#!">Contact</a>
-        </li>
-      </ul>
-
-      <ul class="navbar-nav flex-row">
-        <li class="nav-item">
-          <a class="nav-link pe-3" href="#!">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" href="#!">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ps-3" href="#!">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
+        <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+            <a class="nav-link pe-3" href="#!">
+                <i class="fab fa-youtube"></i>
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link px-3" href="#!">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link ps-3" href="#!">
+                <i class="fab fa-instagram"></i>
+            </a>
+            </li>
+        </ul>
+        </div>
     </div>
-  </div>
-</nav>
-<!-- Header -->
+    </nav>
+    <!-- Header -->
+</header>
+<body>
