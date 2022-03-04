@@ -8,11 +8,11 @@
 function pretty_print_r($var): void{
     echo '<pre>'.print_r($var, true).'</pre>';
 }
-// On initialise la base de l'url
-const baseUrl = 'https://api.themoviedb.org/3/';
 
-    require_once('../vendor/autoload.php');
+require('./vendor/autoload.php');
+require('./config/config.php');
     use GuzzleHttp\Client;
+    
     function get_client(){
         $client = new Client([
             'verify' => false,
@@ -20,29 +20,37 @@ const baseUrl = 'https://api.themoviedb.org/3/';
         ]);
         return $client;
     }
-
-    function make_a_request(Client $client){
-        // $response = $client->get('https://api.themoviedb.org/3/authentication/token/new?api_key=ee7a7c67e85b3b17c01fe7b891ebdb11');
-        
-        $response = $client->get(baseUrl . 'search/movie?query=' . urlencode('harry Potter') .'&api_key=ee7a7c67e85b3b17c01fe7b891ebdb11');
-        pretty_print_r(json_decode($response->getBody()->getContents()));
-    }
-    $client = get_client();
-    make_a_request($client);
-
-    function get_films() {
-        
-    }
-    get_film_by_id($client, 767);
+    
     /**
-     * Fonction qui affiche les informations d'un film à partir de sont id
+     * Undocumented function
      *
      * @param Client $client
-     * @param [type] $filmId
+     * @param string $url
      * @return void
      */
-    function get_film_by_id(Client $client , $filmId) {
-        $response = $client->get(baseUrl . 'movie/' . $filmId .'?api_key=ee7a7c67e85b3b17c01fe7b891ebdb11');
-        pretty_print_r(json_decode($response->getBody()->getContents()));
+    function make_a_request(Client $client, string $url){
+        $response = $client->get($url);
+        return json_decode($response->getBody()->getContents());
     }
+    /**
+     * Fonction qui retourne la liste des films les plus populaires
+     *
+     * @return array
+     */
+    function get_films(){
+        $client = get_client();
+        return make_a_request($client, base_url. '/movie/popular?' .authentification_parameters);   
+    }
+    /**
+     * Fonction qui retourne les informations d'un film par son id
+     *
+     * @param integer $id
+     * @return array
+     */
+    function get_film_by_id(int $id){
+        $client = get_client();
+        return make_a_request($client, base_url.'/movie/'. $id . '?' .authentification_parameters);
+    }
+
+    pretty_print_r(get_film_by_id(123));
 ?>
