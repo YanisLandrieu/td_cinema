@@ -6,24 +6,20 @@
 
         <!-- Grid row -->
         <div class="row" style="margin-left: 450px;">
-
-            <div class="col-md-3 mb-md-0 mb-3"> 
-
+            <div class="col-md-3 mb-md-0 mb-3">
                 <!-- Links -->
-
-                 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!">Mentions Légales</a>
+                        <a href="#!" style="text-decoration: none; color:black">Mentions Légales</a>
                     </li>
                     <li>
-                        <a href="#!">CGU</a>
+                        <a href="#!" style="text-decoration: none; color:black">CGU</a>
                     </li>
                     <li>
-                        <a href="#!">Politique de cookies</a>
+                        <a href="#!" style="text-decoration: none; color:black">Politique de cookies</a>
                     </li>
                     <li>
-                        <a href="#!">Recrutement</a>
+                        <a href="#!" style="text-decoration: none; color:black">Recrutement</a>
                     </li>
                 </ul>
 
@@ -32,21 +28,21 @@
             <hr class="clearfix w-100 d-md-none pb-3">
 
             <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3"> 
+            <div class="col-md-3 mb-md-0 mb-3">
                 <!-- Links -->
-                 
+               
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!">Mentions Légales</a>
+                        <a href="#!" style="text-decoration: none; color:black">Mentions Légales</a>
                     </li>
                     <li>
-                        <a href="#!">CGU</a>
+                        <a href="#!" style="text-decoration: none; color:black">CGU</a>
                     </li>
                     <li>
-                        <a href="#!">Politique de cookies</a>
+                        <a href="#!" style="text-decoration: none; color:black">Politique de cookies</a>
                     </li>
                     <li>
-                        <a href="#!">Recrutement</a>
+                        <a href="#!" style="text-decoration: none; color:black">Recrutement</a>
                     </li>
                 </ul>
 
