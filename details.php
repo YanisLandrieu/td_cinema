@@ -1,4 +1,5 @@
 <?php include_once('./inc/header.php'); ?>
+<?php include_once('./functions.php'); ?>
 
 
 <div class="container dotted p-4 mt-4">

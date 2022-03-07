@@ -1,7 +1,6 @@
 <?php include_once('./functions.php'); ?>
 
 <?php     
-$id = 254;
     $filmsDisplay = '';
     foreach (get_films()->results as $key => $value) : ?>
         <?php $title = get_films()->results[$key]->original_title; ?>
