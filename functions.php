@@ -52,23 +52,4 @@ require('./config/config.php');
         return make_a_request($client, base_url.'/movie/'. $id . '?' .authentification_parameters);
     }
 
-    
-    function test() {
-        foreach (get_films()->results as $key => $value) {
-            pretty_print_r(get_films()->results[$key]->poster_path);
-        }
-        
-    }
-
-    function get_films_title() {
-        foreach (get_films()->results as $key => $value) {
-            pretty_print_r(get_films()->results[$key]->original_title);
-        }
-    }
-
-    function get_image(int $id) {
-        $client = get_client();
-        return make_a_request($client, base_url.'/movie/'. $id . '/images?' .authentification_parameters);
-    }
-
 ?>

@@ -43,4 +43,3 @@
         </nav>
     </header>
     <!-- Header -->
-    <?php test(); ?>
