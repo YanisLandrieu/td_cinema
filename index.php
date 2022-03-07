@@ -9,7 +9,7 @@
                 <div class='col-12 col-sm-6 col-xl-4 mb-3'>
                     <div class='row no-gutters'>
                         <div class='col-md-7 pl-2'>
-                            <h5 class="pt-3 pt-md-0">Titre du film</h5>
+                            <h3 class="pt-3 pt-md-0">Titre du film</h5>
                             <img class='img-fluid' src='${poster}' />
                             <p class='text'>Description du film</p>
                             <button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; ">En savoir plus</button>
