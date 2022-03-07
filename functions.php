@@ -12,7 +12,7 @@ function pretty_print_r($var): void{
 require('./vendor/autoload.php');
 require('./config/config.php');
     use GuzzleHttp\Client;
-    
+
     function get_client(){
         $client = new Client([
             'verify' => false,
@@ -52,5 +52,5 @@ require('./config/config.php');
         return make_a_request($client, base_url.'/movie/'. $id . '?' .authentification_parameters);
     }
 
-    pretty_print_r(get_film_by_id(123));
+    pretty_print_r(get_film_by_id(203));
 ?>
