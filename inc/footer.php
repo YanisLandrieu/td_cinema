@@ -7,11 +7,11 @@
         <!-- Grid row -->
         <div class="row" style="margin-left: 450px;">
 
-            <div class="col-md-3 mb-md-0 mb-3"><br>
+            <div class="col-md-3 mb-md-0 mb-3"> 
 
                 <!-- Links -->
 
-                <br>
+                 
                 <ul class="list-unstyled">
                     <li>
                         <a href="#!">Mentions Légales</a>
@@ -32,9 +32,9 @@
             <hr class="clearfix w-100 d-md-none pb-3">
 
             <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3"><br>
+            <div class="col-md-3 mb-md-0 mb-3"> 
                 <!-- Links -->
-                <br>
+                 
                 <ul class="list-unstyled">
                     <li>
                         <a href="#!">Mentions Légales</a>

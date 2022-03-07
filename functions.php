@@ -13,7 +13,7 @@ require('./vendor/autoload.php');
 require('./config/config.php');
     use GuzzleHttp\Client;
     
-    function get_client(){
+    function get_client() {
         $client = new Client([
             'verify' => false,
             'stream' => false,
@@ -22,13 +22,13 @@ require('./config/config.php');
     }
     
     /**
-     * Undocumented function
+     * Permet d’émettre une requête http vers l’api. Elle retourne un objet réponse
      *
      * @param Client $client
      * @param string $url
      * @return void
      */
-    function make_a_request(Client $client, string $url){
+    function make_a_request(Client $client, string $url) {
         $response = $client->get($url);
         return json_decode($response->getBody()->getContents());
     }
@@ -37,7 +37,7 @@ require('./config/config.php');
      *
      * @return array
      */
-    function get_films(){
+    function get_films() {
         $client = get_client();
         return make_a_request($client, base_url. '/movie/popular?' .authentification_parameters);   
     }
@@ -47,10 +47,28 @@ require('./config/config.php');
      * @param integer $id
      * @return array
      */
-    function get_film_by_id(int $id){
+    function get_film_by_id(int $id) {
         $client = get_client();
         return make_a_request($client, base_url.'/movie/'. $id . '?' .authentification_parameters);
     }
 
-    pretty_print_r(get_film_by_id(123));
+    
+    function test() {
+        foreach (get_films()->results as $key => $value) {
+            pretty_print_r(get_films()->results[$key]->poster_path);
+        }
+        
+    }
+
+    function get_films_title() {
+        foreach (get_films()->results as $key => $value) {
+            pretty_print_r(get_films()->results[$key]->original_title);
+        }
+    }
+
+    function get_image(int $id) {
+        $client = get_client();
+        return make_a_request($client, base_url.'/movie/'. $id . '/images?' .authentification_parameters);
+    }
+
 ?>
