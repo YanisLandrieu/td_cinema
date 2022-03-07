@@ -39,7 +39,7 @@ require('./config/config.php');
      */
     function get_films() {
         $client = get_client();
-        return make_a_request($client, base_url. '/movie/popular?' .authentification_parameters);   
+        return make_a_request($client, base_url. '/movie/popular?' .authentification_parameters . '&language=fr-FR');   
     }
     /**
      * Fonction qui retourne les informations d'un film par son id
@@ -49,7 +49,7 @@ require('./config/config.php');
      */
     function get_film_by_id(int $id) {
         $client = get_client();
-        return make_a_request($client, base_url.'/movie/'. $id . '?' .authentification_parameters);
+        return make_a_request($client, base_url.'/movie/'. $id . '?' .authentification_parameters . '&language=fr-FR');
     }
 
 ?>
