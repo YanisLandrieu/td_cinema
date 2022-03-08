@@ -55,3 +55,12 @@ h3{
   overflow: hidden;
   }
 
+.card {
+  display: flex;
+}
+*
+.row {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
