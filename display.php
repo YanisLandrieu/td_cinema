@@ -2,6 +2,7 @@
 
 <?php     
     $filmsDisplay = '';
+    // On boucle sur le résultat de get_films()
     foreach (get_films($_GET['page'])->results as $key => $value) : ?>
         <?php $title = get_films($_GET['page'])->results[$key]->original_title; ?>
         <?php $posterPath = get_films($_GET['page'])->results[$key]->poster_path; ?>
