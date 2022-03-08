@@ -38,8 +38,8 @@
                             <a class="nav-link px-3" href="#!">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form class="d-flex" action="http://td_cinema.test/search.php" method="POST">
+                        <input class="form-control me-2" type="search" placeholder="Recherchez un film" aria-label="Search" name="search">
                         <button class="btn" type="submit" style="background-color:black; color:white">Search</button>
                     </form>
                 </div>

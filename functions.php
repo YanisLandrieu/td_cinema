@@ -65,4 +65,8 @@ require('./config/config.php');
         return make_a_request($client, base_url.'/movie/'. $id . '?' .authentification_parameters . '&language=fr-FR');
     }
 
+    function searchFilms($research) {
+        $client = get_client();
+        return make_a_request($client, base_url. '/search/movie?' .authentification_parameters . '&language=fr-FR' . '&query=' . $research);
+    }
 ?>
