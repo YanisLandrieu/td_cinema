@@ -20,7 +20,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0" style="background-color: #fecc00;">
             <div class="container">
-                <a class="navbar-brand" href="#">Allociné</a>
+                <a class="navbar-brand" href="http://td_cinema.test/">Allociné</a>
                 <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="d-flex justify-content-start align-items-center">
                         <i class="fas fa-bars"></i>
