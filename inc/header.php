@@ -35,7 +35,7 @@
                             <a class="nav-link px-3" href="#!">Top Films</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="#!">Contact</a>
+                            <a class="nav-link px-3" href="http://td_cinema.test/contact.php">Contact</a>
                         </li>
                     </ul>
                     <form class="d-flex" action="http://td_cinema.test/search.php" method="POST">
