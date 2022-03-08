@@ -31,7 +31,7 @@
                         <div class='row no-gutters'>
                             <div class='col-md-7 pl-2'>
                                 <h3 class="pt-3 pt-md-0"><?= $title; ?></h5>
-                                <?= (!empty($posterPath)) ? "<img class='img-fluid' src='https://image.tmdb.org/t/p/original$posterPath' />" : '' ?>
+                                <?= (!empty($posterPath)) ? "<img class='img-fluid' src='https://image.tmdb.org/t/p/original$posterPath' />" : "<img class='img-fluid' src='./assets/img/no-image.jpg' />" ?>
                                 <p class='text'><?= $desc; ?></p>
                                 <a href='http://td_cinema.test/details.php?id=<?= $id; ?>'><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">En savoir plus</button></a>
                             </div>
