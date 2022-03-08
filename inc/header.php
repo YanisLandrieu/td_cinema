@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarExample01" style="margin-left: 285px;">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link px-3" href="#!">Films du Moment</a>
+                            <a class="nav-link px-3" href="http://td_cinema.test/">Films du Moment</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-3" href="#!">Top Films</a>
