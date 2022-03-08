@@ -22,7 +22,7 @@ require('./config/config.php');
         ]);
         return $client;
     }
-    
+
     /**
      * Permet d’émettre une requête http vers l’api. Elle retourne un objet réponse
      *
@@ -34,6 +34,17 @@ require('./config/config.php');
         $response = $client->get($url);
         return json_decode($response->getBody()->getContents());
     }
+
+    // erreur ------------------------------------------------------------------------------------
+    // use GuzzleHttp\Exception\ClientException;
+    // try {
+    //     pretty_print_r(make_a_request(get_client(), base_url. '/movie/popular?' .authentification_parameters . '&language=fr-FR' . '&page=1000')->getStatusCode());
+    // }
+    // catch(ClientException $e) {
+    //     pretty_print_r($e->getResponse()->getStatusCode());
+    // }
+    // -------------------------------------------------------------------------------------------
+
     /**
      * Fonction qui retourne la liste des films les plus populaires
      *
