@@ -1,4 +1,6 @@
 <?php 
+
+
 /**
  * Fonction qui fait un print_r plus visible
  *
@@ -37,9 +39,9 @@ require('./config/config.php');
      *
      * @return array
      */
-    function get_films() {
+    function get_films($page) {
         $client = get_client();
-        return make_a_request($client, base_url. '/movie/popular?' .authentification_parameters . '&language=fr-FR');   
+        return make_a_request($client, base_url. '/movie/popular?' .authentification_parameters . '&language=fr-FR' . '&page=' . $page);
     }
     /**
      * Fonction qui retourne les informations d'un film par son id
