@@ -38,6 +38,10 @@
                             <a class="nav-link px-3" href="#!">Contact</a>
                         </li>
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit" style="background-color:black; color:white">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
