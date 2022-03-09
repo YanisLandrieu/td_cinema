@@ -13,7 +13,7 @@
                 <h3 class="pt-3 pt-md-0"><?= $title; ?></h5>
                 <img class='img-fluid' src='https://image.tmdb.org/t/p/original<?= $posterPath; ?>' />
                 <p class='text'><?= $desc; ?></p>
-                <a href='http://td_cinema.test/details.php?id=<?= $id; ?>'><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">En savoir plus</button></a>
+                <a href='http://<?= $_SERVER['SERVER_NAME'] ?>/details.php?id=<?= $id; ?>'><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">En savoir plus</button></a>
             </div>
         </div>
     </div>
