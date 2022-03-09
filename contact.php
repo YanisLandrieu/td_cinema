@@ -9,15 +9,15 @@
                 <div class='col-12 col-sm-6 col-xl-4 mb-3'>
                     <div class='row no-gutters'>
                         <form action="/ma-page-de-traitement" method="post">
-                            <label for="">Adresse Mail :</label>
+                            <label for="mail">Adresse Mail :</label>
                             <div>
                                 <input type="email" id="mail" name="user_mail" placeholder="Adresse Mail">
                             </div><br>
-                            <label for="">Objet du Message :</label>
+                            <label for="objet">Objet du Message :</label>
                             <div>
-                                <input type="text" id="objet" name="user_name" placeholder="Objet du Message">
+                                <input type="text" id="objet" name="user_object" placeholder="Objet du Message">
                             </div><br>
-                            <label for="">Message : </label>
+                            <label for="msg">Message : </label>
                             <div>
                                 <textarea id="msg" name="user_message" placeholder="Message"></textarea>
                             </div><br>

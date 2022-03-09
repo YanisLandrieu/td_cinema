@@ -33,7 +33,7 @@
                                 <h3 class="pt-3 pt-md-0"><?= $title; ?></h5>
                                 <?= (!empty($posterPath)) ? "<img class='img-fluid' src='https://image.tmdb.org/t/p/original$posterPath' />" : "<img class='img-fluid' src='./assets/img/no-image.jpg' />" ?>
                                 <p class='text'><?= $desc; ?></p>
-                                <a href='http://td_cinema.test/details.php?id=<?= $id; ?>'><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">En savoir plus</button></a>
+                                <a href='https://<?= $_SERVER['SERVER_NAME'];?>/details.php?id=<?= $id; ?>'><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">En savoir plus</button></a>
                             </div>
                         </div>
                     </div>
@@ -42,8 +42,8 @@
             </div>
             <div class="boutons" style="margin-left: 460px;">
             <!-- Boutons précédent et suivant -->
-                <a href="http://td_cinema.test/search.php?page=<?= ($_GET['page'] == 1) ? $_GET['page'] : $_GET['page'] - 1; ?>"><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">Précédent</button></a>
-                <a href="http://td_cinema.test/search.php?page=<?= $_GET['page'] + 1; ?>"><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">Suivant</button></a>
+                <a href="https://<?= $_SERVER['SERVER_NAME'];?>/search.php?page=<?= ($_GET['page'] == 1) ? $_GET['page'] : $_GET['page'] - 1; ?>"><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">Précédent</button></a>
+                <a href="https://<?= $_SERVER['SERVER_NAME'];?>/search.php?page=<?= $_GET['page'] + 1; ?>"><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">Suivant</button></a>
             </div>
 
         </div>
