@@ -41,8 +41,8 @@
                         </li>
                     </ul>
                     <form class="d-flex" action="https://<?= $_SERVER['SERVER_NAME'];?>/search.php" method="POST">
-                        <input class="form-control me-2" type="search" placeholder="Recherchez un film" aria-label="Search" name="search">
-                        <button class="btn" type="submit" style="background-color:black; color:white">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Rechercher un film" aria-label="Search" name="search">
+                        <button class="btn" type="submit" style="background-color:black; color:white">Rechercher</button>
                     </form>
                 </div>
             </div>
