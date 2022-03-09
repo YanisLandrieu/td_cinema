@@ -22,7 +22,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0" style="background-color: #fecc00;">
             <div class="container">
-                <a class="navbar-brand" href="http://td_cinema.test/">Allociné</a>
+                <a class="navbar-brand" href="http://<?= $_SERVER['SERVER_NAME']?>">Allociné</a>
                 <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="d-flex justify-content-start align-items-center">
                         <i class="fas fa-bars"></i>
@@ -31,16 +31,16 @@
                 <div class="collapse navbar-collapse" id="navbarExample01" style="margin-left: 285px;">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link px-3" href="http://td_cinema.test/">Films du Moment</a>
+                            <a class="nav-link px-3" href="http://<?= $_SERVER['SERVER_NAME'] ?>">Films du Moment</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-3" href="#!">Top Films</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" href="http://td_cinema.test/contact.php">Contact</a>
+                            <a class="nav-link px-3" href="http://<?= $_SERVER['SERVER_NAME'] ?>/contact.php">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex" action="http://td_cinema.test/search.php" method="POST">
+                    <form class="d-flex" action="http://<?= $_SERVER['SERVER_NAME'] ?>/search.php" method="POST">
                         <input class="form-control me-2" type="search" placeholder="Recherchez un film" aria-label="Search" name="search">
                         <button class="btn" type="submit" style="background-color:black; color:white">Search</button>
                     </form>
