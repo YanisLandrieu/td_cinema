@@ -18,8 +18,8 @@
             </div>
             <div class="boutons" style="margin-left: 460px;">
             <!-- Boutons précédent et suivant -->
-                <a href="https://<?= $_SERVER['SERVER_NAME'];?>?page=<?= ($_GET['page'] == 1) ? $_GET['page'] : $_GET['page'] - 1; ?>"><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">Précédent</button></a>
-                <a href="https://<?= $_SERVER['SERVER_NAME'];?>?page=<?= $_GET['page'] + 1; ?>"><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">Suivant</button></a>
+                <a href="http://<?= $_SERVER['SERVER_NAME'] ?>?page=<?= ($_GET['page'] == 1) ? $_GET['page'] : $_GET['page'] - 1; ?>"><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">Précédent</button></a>
+                <a href="http://<?= $_SERVER['SERVER_NAME'] ?>?page=<?= $_GET['page'] + 1; ?>"><button type="button" class="btn btn-primary" style="background-color: #fecc00; border-color:black; color:black;">Suivant</button></a>
             </div>
 
         </div>
